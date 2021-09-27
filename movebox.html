@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .outerbox{
+        user-select: none;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        height: 50%;
+        line-height: 200%;
+        font-size: 500%;
+        width: 100%;
+        border-style: none;
+        text-align: center;
+    }
+    #obox1{
+        background-color: rgb(255, 100, 100);
+    }
+    #obox2{
+        background-color: rgb(100, 100, 255);
+        top: 50%;
+    }
+    .inbox{
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        height: 40px;
+        line-height: 40px;
+        width: 100px;
+        text-align: center;
+        background-color: darkgoldenrod;
+        box-shadow: 5px 5px rgb(50, 50, 50);
+    }
+    .inbox:hover{
+        cursor: pointer;
+        user-select: none;
+        opacity: 50%;
+    }
+    #box{
+        position: absolute;
+    }
+    #box1{
+    }
+</style>
+<body>
+    
+    <div class="outerbox" id="obox1"></div>
+    <div class="outerbox" id="obox2"></div>
+    <div class="inbox" id="box">김둥감자</div>
+    <div class="inbox" id="box1">김둥감자</div>
+    <script src="movebox.js"></script>
+</body>
+</html>
